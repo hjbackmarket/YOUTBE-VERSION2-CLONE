@@ -1,12 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1 ></h1>
+    <header class="w-[100%] h-[100px] ">
+        <nav class="flex items-center w-[100%]  h-[100px] bg-black fixed  ">
+            <!-- hamburger-bar-start -->
+            <div class="text-white w-[10%]  flex ml-5 items-center   ">
+                <i class="fa-solid fa-bars text-[30px] "></i>
+                <i class="fa-brands fa-youtube ml-5 text-[30px] text-red-600"></i>
+                <p class="text-[25px] ml-1">YouTube<sup class="text-[13px] text-gray-400 ml-1">kh</sup></p>
+            </div>
+
+            <!-- hamburger-bar-end -->
+            <!-- search-bar-start -->
+            <div class="text-white w-[80%] flex-1 flex justify-center items-center  ">
+                <input type="search" placeholder="Search"
+                    class=" w-[50%] h-[40px]  border border-gray-400 rounded-l-full p-5 ">
+                <i class="fa-solid fa-magnifying-glass p-3.5 rounded-r-full bg-gray-400 cursor-pointer  "></i>
+                <i class="fa-solid fa-microphone ml-5 h-10 w-10 bg-gray-400 cursor-pointer "
+                    style="display: flex; border-radius: 1000px; justify-content: center; align-items: center;"></i>
+            </div>
+
+            <!-- search-bar-end -->
+
+            <!-- profile-ring-create-start-->
+            <div class="text-white w-[10%]   ">
+                <!-- create-btn -->
+                <div class="flex  items-center  bg-gray-400  cursor-pointer  "
+                    style="width: 100px; height: 40px; border-radius: 100px;">
+                    <i class="fa-solid fa-plus text-[20px] ml-3"></i>
+                    <p class="ml-2">Create</p>
+                    <div class="flex ml-7">
+                        <i class="fa-regular fa-bell  bg-red-500 rounded-full"
+                            style="width: 50px; height: 50px; border-radius: 200px; display: flex; justify-content: center; align-items: center; font-size: 20px;"></i>
+                        <i class="fa-solid fa-user  bg-red-500 rounded-full ml-5"
+                            style="width: 50px; height: 50px; border-radius: 200px; display: flex; justify-content: center; align-items: center; font-size: 20px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile-ring-create-end -->
+        </nav>
+    </header>
+
+    <aside class="w-[10%] h-[1500px] bg-yellow-300 fixed">
+        <!-- aside-overflow-y-start -->
+        <div class=" h-[1250px] overflow-y-auto">
+            <!-- side-bar-container-start -->
+            <div class="side-bar-container">
+
+                <!-- 1st-block-sidebar-start -->
+                <!-- home-side-bar-start -->
+                <div class="  bg-green-300 ml-3 p-2 text-gray-400">
+                    <div class="flex items-center">
+                        <i class="fa-sharp-duotone fa-solid fa-house "></i>
+                        <p class="ml-5 text-gray-200">Home</p>
+                    </div>
+                </div>
+                <!-- home-side-bar-end -->
+                <!-- shorts-sidebar-start -->
+                <div class="  bg-green-300 ml-3 p-2 text-gray-400">
+                    <div class="flex items-center">
+                        <i class="fa-sharp-duotone fa-solid fa-house "></i>
+                        <p class="ml-5 text-gray-200">Shorts</p>
+                    </div>
+                </div>
+                <!-- shorts-sidebar-end -->
+                <!-- subscription-siddbar-start -->
+                <div class="  bg-green-300 ml-3 p-2 text-gray-400">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-video "></i>
+                        <p class="ml-5 text-gray-200">Subscription</p>
+                    </div>
+                    <hr class="bg-gray-400">
+                    <!-- subscription-siddbar-end -->
+                    <!-- you-sidebar-start  -->
+                    <div class="flex items-center my-3 text-gray-400 ">
+                        <p class="text-gray-400">You</p>
+                        <i class="fa-solid fa-angle-right ml-2  text-[15px]"></i>
+                    </div>
+                    <!-- you-sidebar-end -->
+                    <!-- history-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-solid fa-clock-rotate-left "></i>
+                        <p class="ml-5 text-gray-200">History</p>
+                    </div>
+                    <!-- history-sidebar-end -->
+                    <!-- videoseries-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <p class="ml-5 text-gray-200">Video series</p>
+                    </div>
+                    <!-- videoseries-sidebar-end -->
+                    <!-- yourvideo-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-tv"></i>
+                        <p class="ml-5 text-gray-200">Your video</p>
+                    </div>
+                    <!-- yourvideo-sidebar-end -->
+                    <!-- watchlater-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="ml-5 text-gray-200">Wacth later.</p>
+                    </div>
+                    <!-- watchlater-sidebar-end -->
+                    <!-- favoritevideo-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p class="ml-5 text-gray-200">Favorite videos</p>
+                    </div>
+                    <!-- favoritevideo-sidebar-end -->
+                    <!-- downlode-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="ml-5 text-gray-200">Downloaded video</p>
+                    </div>
+                    <hr>
+                    <!-- downlode-sidebar-end -->
+                    <!-- subscription-sidebar-start -->
+                    <div class="flex items-center my-3 text-gray-400 ">
+                        <p class="text-gray-400">Subscription</p>
+                        <i class="fa-solid fa-angle-right ml-2  text-[15px]"></i>
+                    </div>
+                    <!-- channel-numberone-sidebar-start -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-circle text-[30px]"></i>
+                        <p class="ml-5 text-gray-200">International-cusine</p>
+                    </div>
+                    <!-- channel-numberone-sidebar-end -->
+                    <!-- channel-numbertwo-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-circle text-[30px]"></i>
+                        <p class="ml-5 text-gray-200">ahh j'vak</p>
+                    </div>
+                    <!-- channel-numbertwo-sidebar-end -->
+                    <!-- channel-numberthree-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-circle text-[30px]"></i>
+                        <p class="ml-5 text-gray-200">Vitamin-c</p>
+                    </div>
+                    <!-- channel-numberthree-end -->
+                    <!-- channel-lastone-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-regular fa-circle text-[30px]"></i>
+                        <p class="ml-5 text-gray-200">hjzyyy</p>
+                    </div>
+                    <hr>
+                    <!-- channel-lastone-end -->
+                    <!-- subscription-sidebar-start -->
+                    <!-- explore-sidebar-start  -->
+                    <div class="flex items-center my-3 text-gray-400 ">
+                        <p class="text-gray-400">Explore</p>
+                    </div>
+                    <!-- explore-sidebar-end -->
+                    <!-- music-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <p class="ml-5 text-gray-200">Music</p>
+                    </div>
+                    <!-- music-sidebar-end -->
+                    <!-- game-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <p class="ml-4 text-gray-200">Game</p>
+                    </div>
+                    <!-- game-sidebar-end -->
+                    <!-- sports-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2">
+                        <i class="fa-solid fa-medal"></i>
+                        <p class="ml-5 text-gray-200">Sports</p>
+                    </div>
+                    <!-- sports-sidebar-end -->
+                    <!-- morefromyoutube-sidebar-start  -->
+                    <div class="flex items-center my-3 text-gray-400 ">
+                        <p class="text-gray-400">More from YouTube</p>
+                    </div>
+                    <!-- morefromyoutube-sidebar-end -->
+                    <!-- youtubeprimieum-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p class="ml-5 text-gray-200">YouTube Premium</p>
+                    </div>
+                    <!-- youtubeprimieum-sidebar-end -->
+                    <!-- youtubestudio-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p class="ml-5 text-gray-200">YouTube Studio</p>
+                    </div>
+                    <!-- youtubestudio-sidebar-end -->
+                    <!-- youtubemusic-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <p class="ml-5 text-gray-200">YouTube Music</p>
+                    </div>
+                    <hr>
+                    <!-- youtubemusic-sidebar-end -->
+                    <!-- setting-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-solid fa-gear"></i>
+                        <p class="ml-5 text-gray-200">Setting</p>
+                    </div>
+                    <!-- setting-sidebar-end -->
+                    <!-- reportinghistory-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-regular fa-flag"></i>
+                        <p class="ml-5 text-gray-200">Reporting history</p>
+                    </div>
+                    <!-- reportinghistory-sidebar-end -->
+                    <!-- help-sidebar-start    -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <p class="ml-5 text-gray-200">Help</p>
+                    </div>
+                    <!-- help-sidebar-end -->
+                    <!-- sentfeedback-sidebar-start  -->
+                    <div class="flex items-center text-gray-400 pt-2 pb-2 ">
+                        <i class="fa-solid fa-message"></i>
+                        <p class="ml-5 text-gray-200">Send feedback</p>
+                    </div>
+                    <hr>
+                    <!-- sentfeedback-sidebar-end -->
+                    <!-- copyrightpart-sidebar-start -->
+                    <p>About Press release</p>
+                    <p>Copyright Contact us Creator</p>
+                    <p>Advertisement Developer</p>
+                    <p >Conditions Privacy</p>
+                    <p>Policy and safety</p>
+                    <p>How Youtube Works</p>
+                    <p>Try new features</p>
+                    <div class="flex items-center">
+                        <i class="fa-regular fa-copyright"></i>
+                        <p>2025 Google LLC</p>
+                    </div>
+
+                    <!-- copyrightpart-sidebar-end -->
+
+
+
+
+
+
+
+                <!-- side-bar-container-end -->
+            </div>
+            <!-- aside-overflow-y-end-->
+        </div>
+    </aside>
+    <main>
+        <!-- viedo-satart -->
+        <section class="w-[100] bg-red-500 h-[2000vh]">
+
+        </section>
+    </main>
+
+
 </body>
+
 </html>
